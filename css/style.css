@@ -74,7 +74,7 @@ footer img {
 	height: 22px;
 }
 
-#track-grid {
+.track-grid {
 	display: grid;
 	grid-template-columns: auto auto auto;
 	background-image: url("../images/running-track-top-view-sport-stadium-vector-33171948.jpg");
@@ -84,7 +84,7 @@ footer img {
 
 }
 
-#track-grid a:not(:nth-child(5)):hover {
+.track-grid a:not(:nth-child(5)):hover {
 	background-color: rgba(255, 230, 0, 0.2);
 }
 
