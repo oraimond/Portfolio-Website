@@ -142,18 +142,20 @@ h1 {
 	display: none;
 }
 
+.oli-gallery img,
+.thomas-gallery img {
+	width: 100%;
+}
+
 .oli-gallery {
 	display: grid;
 	grid-template-columns: 50% 50%;
 }
 
-.oli-gallery img {
-	width: 100%;
-}
-
 .oli-gallery img:nth-child(3n) {
 	grid-column: 1 / -1;
 }
+
 
 @media screen and (min-width: 950px) {
 	.oli-gallery {
@@ -191,5 +193,21 @@ h1 {
 
 	.oli-gallery img:last-child {
 		display: block;
+	}
+
+	.thomas-gallery {
+		display: grid;
+		grid-template-columns: 25% 25% 25% 25%;
+	}
+
+	.thomas-gallery img:first-child,
+	.thomas-gallery img:nth-child(4),
+	.thomas-gallery img:nth-child(6) {
+		grid-row: span 2;
+	}
+
+	.thomas-gallery img:nth-child(3) {
+		grid-row: span 2;
+		grid-column: span 2;
 	}
 }
