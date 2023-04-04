@@ -156,14 +156,6 @@ h1 {
 	grid-column: 1 / -1;
 }
 
-.thomas-gallery {
-	display: grid;
-	grid-template-columns: 505 50%;
-}
-
-.thomas-gallery img:nth-child(3n) {
-	grid-column: span 2;
-}
 
 @media screen and (min-width: 950px) {
 	.oli-gallery {
@@ -204,6 +196,7 @@ h1 {
 	}
 
 	.thomas-gallery {
+		display: grid;
 		grid-template-columns: 25% 25% 25% 25%;
 	}
 
