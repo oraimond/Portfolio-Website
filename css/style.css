@@ -11,15 +11,20 @@ body {
 }
 
 .home-head,
-.hero {
-	height: 600px;
+#hero {
+	height: 100vh;
 }
 
 
 nav {
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: center;
 	align-items: center;
+}
+
+nav ul {
+	text-align: center;
 }
 
 nav li {
@@ -95,6 +100,7 @@ footer img {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
+	height: 600px;
 }
 
 #hero {
@@ -107,12 +113,14 @@ footer img {
 	background-size: cover;
 	background-position: center;
 	z-index: -1;
+	align-content: flex-end;
 }
 
 h1 {
 	margin-left: 30px;
 	color: white;
 	font-size: 80px;
+	margin-bottom: 50px;
 }
 
 .skip {
@@ -157,8 +165,8 @@ h1 {
 	grid-column: 1 / -1;
 }
 
-.thomas-gallery img:first-child { 
-	grid-row: span 2; 
+.thomas-gallery img:first-child {
+	grid-row: span 2;
 }
 
 .thomas-gallery img:nth-child(4) {
@@ -179,10 +187,18 @@ h1 {
 }
 
 @media screen and (min-width: 950px) {
+	#hero {
+		align-content: inherit;
+	}
+
+	nav {
+		justify-content: space-between;
+	}
+
 	.promo-image {
 		display: block;
 	}
-	
+
 	.oli-gallery {
 		grid-template-columns: 25% 25% 25% 25%;
 	}
