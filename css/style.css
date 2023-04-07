@@ -21,6 +21,7 @@ nav {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	row-gap: 20px;
 }
 
 nav ul {
@@ -119,7 +120,7 @@ footer img {
 h1 {
 	margin-left: 30px;
 	color: white;
-	font-size: 80px;
+	font-size: 60px;
 	margin-bottom: 50px;
 }
 
@@ -186,7 +187,43 @@ h1 {
 	display: none;
 }
 
+h2 {
+	font-size: 48px;
+	text-align: center;
+}
+
+.home-content {
+	padding: 50px;
+}
+
+.two-options {
+	padding: 50px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.two-options a {
+	width: 45%;
+	border: solid 4px #FFFFFF;
+}
+
+.two-options a:hover {
+	border-color: #FFCB05;
+}
+
+.two-options img {
+	width: 100%;
+}
+
 @media screen and (min-width: 950px) {
+	h1 {
+		font-size: 80px;
+	}
+
+	.two-options a {
+		width: 35%;
+	}
+
 	#hero {
 		align-content: inherit;
 	}
