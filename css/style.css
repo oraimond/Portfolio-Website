@@ -193,11 +193,10 @@ h2 {
 }
 
 .container {
-	padding: 50px;
+	padding: 20px;
 }
 
 .two-options {
-	padding: 50px;
 	display: flex;
 	justify-content: space-around;
 }
@@ -216,6 +215,10 @@ h2 {
 }
 
 @media screen and (min-width: 950px) {
+	.container {
+		padding: 50px;
+	}
+
 	h1 {
 		font-size: 80px;
 	}
