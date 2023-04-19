@@ -83,7 +83,7 @@ footer img {
 .track-grid {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	background-image: url("../images/running-track-top-view-sport-stadium-vector-33171948.jpg");
+	background-image: url("../images/running-track.jpg");
 	background-size: cover;
 	height: calc(100vw * 0.69);
 
